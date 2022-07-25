@@ -10,6 +10,19 @@ body {
 
 .container {
   padding: 0 4rem;
+  
+  @include media($media-large) {
+    padding: 0 3rem;
+  }
+  @include media($media-medium){
+    padding: 0 2rem;
+  }
+  @include media($media-small){
+    padding: 0 1.4rem;
+  }
+  @include media($media-xs){
+    padding: 0 .5rem;
+  }
 }
 
 // TODO: Just for test - delete or comment on production

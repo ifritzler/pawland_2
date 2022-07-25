@@ -156,6 +156,26 @@ body {
 .container {
   padding: 0 4rem;
 }
+@media only screen and (max-width: 990px) {
+  .container {
+    padding: 0 3rem;
+  }
+}
+@media only screen and (max-width: 760px) {
+  .container {
+    padding: 0 2rem;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .container {
+    padding: 0 1.4rem;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .container {
+    padding: 0 0.5rem;
+  }
+}
 
 .container-layout > * {
   border: 1px solid red;
@@ -169,26 +189,100 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: no-wrap;
+  gap: none;
   width: 100%;
   background-color: rgb(24, 24, 24);
   color: white;
-}
-
-.navbar__logo {
-  width: 4rem;
 }
 
 .navbar__brand {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: no-wrap;
   gap: 1rem;
   margin: 1rem;
 }
 
-.navbar__icon {
-  width: 4rem;
+.navbar__brand-name {
+  font-size: 2.5rem;
+}
+
+.navbar__icon,
+.navbar__cart-img,
+.navbar__menu-img {
   fill: white;
+}
+
+.navbar__icon,
+.navbar__cart-img,
+.navbar__menu-img {
+  width: 3rem;
+}
+
+.navbar__links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: no-wrap;
+  gap: 3.2rem;
+}
+
+@media only screen and (max-width: 990px) {
+  .navbar__links {
+    gap: 2rem;
+  }
+  .navbar__links p {
+    font-size: 1.4rem;
+    letter-spacing: 0.7px;
+  }
+}
+@media only screen and (max-width: 760px) {
+  .navbar__links {
+    display: none;
+  }
+}
+
+.navbar__icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: no-wrap;
+  gap: 1rem;
+}
+
+.navbar__menu {
+  display: none;
+}
+@media only screen and (max-width: 760px) {
+  .navbar__menu {
+    display: block;
+  }
+}
+
+.navbar__cart {
+  position: relative;
+  display: inline-block;
+  padding: 0.5em;
+}
+
+.navbar__cart-count {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: no-wrap;
+  gap: none;
+  font-size: 0.9em;
+  font-weight: 700;
+  padding: 0.3rem;
+  background-color: red;
+  border-radius: 8px;
+  color: white;
+  z-index: 2;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,7 +1,6 @@
+// Navbar branding
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flex-container($just: space-between);
     width: 100%;
     background-color: $color-dark;
     color: white;
@@ -9,19 +8,66 @@
     // padding-block: 1.6rem;
 }
 
-.navbar__logo {
-    width: 4rem;
-}
-
 .navbar__brand {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
+    @include flex-container($spacing: 1rem);
     margin: 1rem;
 }
 
-.navbar__icon {
-    width: 4rem;
+.navbar__brand-name {
+    font-size: 2.5rem;
+}
+
+.navbar__icon,
+.navbar__cart-img,
+.navbar__menu-img {
     fill: white;
+}
+
+.navbar__icon,
+.navbar__cart-img,
+.navbar__menu-img {
+    width: 3rem;
+}
+
+// Navbar Link's style
+.navbar__links {
+    @include flex-container($spacing: 3.2rem);
+    
+}
+
+.navbar__links {
+    @include media($media-large) {
+        & p {
+            font-size: 1.4rem;
+            letter-spacing: .7px;
+        }
+        gap: 2rem;
+    }
+    @include media($media-medium){
+        display: none;
+    }
+}
+
+.navbar__icons {
+    @include flex-container($spacing: 1rem);
+}
+
+.navbar__menu {
+    display: none;
+    @include media($media-medium){
+        display: block;
+    }
+}
+
+// Navbar cart
+.navbar__cart {
+    position: relative;
+    display: inline-block;
+    padding: .5em;
+}
+.navbar__cart-count {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    @include counter;
 }

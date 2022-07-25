@@ -4,3 +4,34 @@
     font-weight: $fw;
   }
 }
+
+@mixin flex-container(
+  $dir: row,
+  $just: center,
+  $align: center,
+  $wrap: no-wrap,
+  $spacing: none
+) {
+  display: flex;
+  justify-content: $just;
+  align-items: $align;
+  flex-wrap: $wrap;
+  gap: $spacing;
+}
+
+@mixin counter {
+  @include flex-container();
+  font-size: 0.9em;
+  font-weight: $fw-bold;
+  padding: 0.3rem;
+  background-color: red;
+  border-radius: 8px;
+  color: white;
+  z-index: 2;
+}
+
+@mixin media($max-w){
+  @media only screen and (max-width: $max-w) {
+    @content
+  }
+}
