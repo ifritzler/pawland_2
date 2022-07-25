@@ -80,7 +80,7 @@
               </svg>
             </a>
           </div>
-          <div class="navbar__menu" id="menu-toggle" onclick="showMenuToggle()">
+          <div class="navbar__menu" id="menu-toggle">
             <svg
               class="navbar__menu-img"
               xmlns="http://www.w3.org/2000/svg"
@@ -102,12 +102,34 @@
         <div>Hero image</div>
       </div>
     </main>
-    <footer class="container">
+    <footer class="container footer">
       <nav>
-        <div>Footer links</div>
+        <ul class="footer__links">
+          <li>
+            <a href="#">
+              <p>Tienda</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <p>Nosotros</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <p>Nuestra Historia</p>
+            </a>
+          </li>
+        </ul>
       </nav>
-      <form>
-        <div>Register</div>
+
+      <form id="formularioRegistro">
+        <label for="email">
+          Registra tu email y accede a un codigo de descuento para tu primera
+          compra!
+        </label>
+        <input type="email" name="email" id="email" />
+        <button class="btn--dark" type="submit">Enviar</button>
       </form>
     </footer>
     <div id="wrapper-menu-toggle" class="hidden">

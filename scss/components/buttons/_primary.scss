@@ -1,0 +1,4 @@
+.btn--primary {
+  @extend .btn;
+  font-weight: $fw-sbold;
+}

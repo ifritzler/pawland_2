@@ -152,9 +152,6 @@ body {
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr auto;
 }
-.container-layout > * {
-  border: 1px solid red;
-}
 
 .container {
   padding: 0 4rem;
@@ -187,6 +184,7 @@ body {
 
 .navbar {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   flex-wrap: no-wrap;
@@ -198,6 +196,7 @@ body {
 
 .navbar__brand {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   flex-wrap: no-wrap;
@@ -225,6 +224,7 @@ body {
 
 .navbar__links {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   flex-wrap: no-wrap;
@@ -248,6 +248,7 @@ body {
 
 .navbar__icons {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   flex-wrap: no-wrap;
@@ -280,6 +281,7 @@ body {
   bottom: none;
   right: 0px;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   flex-wrap: no-wrap;
@@ -353,6 +355,7 @@ body {
 
 .close {
   display: flex;
+  flex-direction: row;
   justify-content: flex-end;
   align-items: center;
   flex-wrap: no-wrap;
@@ -373,6 +376,93 @@ body {
 
 .mobile-menu__links {
   margin-top: 5rem;
+}
+
+.footer {
+  background-color: rgb(255, 208, 0);
+  padding: 4rem;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: no-wrap;
+  gap: none;
+}
+@media only screen and (max-width: 760px) {
+  .footer {
+    padding: 3rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4rem;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .footer {
+    padding: 1.3rem;
+  }
+}
+
+.footer__links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: no-wrap;
+  gap: 1.5rem;
+}
+
+#formularioRegistro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: no-wrap;
+  gap: 1.5rem;
+}
+#formularioRegistro label {
+  font-size: 1.6rem;
+  font-weight: 700;
+  min-width: 24ch;
+  max-width: 45ch;
+}
+#formularioRegistro input {
+  width: 90%;
+  padding: 0.7rem 1.2rem;
+  font-size: 1.6rem;
+  border: none;
+  color: rgba(24, 24, 24, 0.9);
+}
+#formularioRegistro input:focus {
+  outline: 1px solid rgba(24, 24, 24, 0.7);
+}
+@media only screen and (max-width: 760px) {
+  #formularioRegistro label {
+    font-size: 1.5rem;
+  }
+  #formularioRegistro input {
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (max-width: 360px) {
+  #formularioRegistro label {
+    font-size: 1.3rem;
+  }
+}
+
+.btn, .btn--primary, .btn--dark {
+  border: none;
+  padding: 1em 1.4em;
+  cursor: pointer;
+  font-weight: 600;
+}
+.btn--dark {
+  background-color: rgb(24, 24, 24);
+  color: rgb(250, 250, 250);
+}
+.btn--primary {
+  background-color: rgb(255, 208, 0);
+  color: rgb(24, 24, 24);
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,54 @@
+.footer {
+  background-color: $color-primary;
+  padding: 4rem;
+  overflow-x: hidden;
+  @include flex-container($just: space-between);
+  @include media($media-medium){
+    padding: 3rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4rem;
+  }
+  @include media($media-xs){
+    padding: 1.3rem;
+  }
+}
+
+.footer__links {
+  @include flex-container($dir: column, $wrap: no-wrap, $spacing: 1.5rem, $align:flex-start);
+}
+
+#formularioRegistro {
+  @include flex-container($dir: column, $wrap: no-wrap, $spacing: 1.5rem, $align:flex-start);
+  & label {
+    font-size: $fs-p;
+    font-weight: 700;
+    min-width: 24ch;
+    max-width: 45ch;
+  }
+
+  & input {
+    width: 90%;
+    padding: .7rem 1.2rem;
+    font-size: 1.6rem;
+    border: none;
+    color: rgba(24, 24, 24, .9);
+    &:focus{
+      outline: 1px solid rgba(24, 24, 24, .7);
+    }
+  }
+
+  @include media($media-medium){
+    & label {
+      font-size: 1.5rem;
+    }
+    & input {
+      font-size: 1.2rem;
+    }
+  }
+  @include media($media-xs){
+    & label {
+      font-size: 1.3rem;
+    }
+  }
+}

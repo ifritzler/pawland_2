@@ -13,6 +13,7 @@
   $spacing: none
 ) {
   display: flex;
+  flex-direction: $dir;
   justify-content: $just;
   align-items: $align;
   flex-wrap: $wrap;
