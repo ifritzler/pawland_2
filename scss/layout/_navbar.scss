@@ -19,13 +19,15 @@
 
 .navbar__icon,
 .navbar__cart-img,
-.navbar__menu-img {
+.navbar__menu-img,
+#close-btn {
     fill: white;
 }
 
 .navbar__icon,
 .navbar__cart-img,
-.navbar__menu-img {
+.navbar__menu-img,
+#close-btn {
     width: 3rem;
 }
 
@@ -61,13 +63,11 @@
 
 // Navbar cart
 .navbar__cart {
-    position: relative;
+    @include positionig(relative);
     display: inline-block;
     padding: .5em;
 }
 .navbar__cart-count {
-    position: absolute;
-    top: 0px;
-    right: 0px;
+    @include positionig(absolute, $top: 0px, $right: 0px);
     @include counter;
 }
