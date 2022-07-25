@@ -1,0 +1,18 @@
+body {
+  min-height: 100vh;
+}
+
+.container-layout{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+}
+
+.container {
+  padding: 0 4rem;
+}
+
+// TODO: Just for test - delete or comment on production
+.container-layout > * {
+  border: 1px solid red;
+}

@@ -1,6 +1,6 @@
-@mixin fs-fw ($ref, $fs, $fw: none){
-    #{$ref} {
-        font-size: $fs;
-        font-weight: $fw;
-    }
+@mixin fs-fw($ref, $fs, $fw: none) {
+  #{$ref} {
+    font-size: $fs;
+    font-weight: $fw;
+  }
 }

@@ -1,0 +1,27 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: $color-dark;
+    color: white;
+    // padding-inline: 4rem;
+    // padding-block: 1.6rem;
+}
+
+.navbar__logo {
+    width: 4rem;
+}
+
+.navbar__brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem;
+}
+
+.navbar__icon {
+    width: 4rem;
+    fill: white;
+}

@@ -106,12 +106,21 @@ input {
   border-radius: 0;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
 html {
   font-size: 62.5%;
 }
 
-body {
+body, h1, h2, h3 {
   font-family: "Roboto", sans-serif;
+}
+
+p, a, li, span {
+  font-family: "Raleway", "Roboto", sans-serif;
 }
 
 h1 {
@@ -132,6 +141,54 @@ h3 {
 p {
   font-size: 1.6rem;
   font-weight: none;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.container-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+}
+
+.container {
+  padding: 0 4rem;
+}
+
+.container-layout > * {
+  border: 1px solid red;
+}
+
+body {
+  background-color: rgb(250, 250, 250);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: rgb(24, 24, 24);
+  color: white;
+}
+
+.navbar__logo {
+  width: 4rem;
+}
+
+.navbar__brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem;
+}
+
+.navbar__icon {
+  width: 4rem;
+  fill: white;
 }
 
 /*# sourceMappingURL=style.css.map */
