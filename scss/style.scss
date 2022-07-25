@@ -1,5 +1,6 @@
 // sass-utils/
 @import './utils/variables';
+@import './utils/mixins';
 // vendors/
 // base/
 @import './base/reset';
@@ -7,3 +8,4 @@
 // layout/
 // components/
 // pages/
+@import './pages/home';

@@ -1,0 +1,12 @@
+html {
+    font-size: $fs-html-base;
+}
+
+body {
+    font-family: $font-family;
+}
+
+@include fs-fw(h1, $fs-h1, $fw-bold);
+@include fs-fw(h2, $fs-h2, $fw-bold);
+@include fs-fw(h3, $fs-h3, $fw-sbold);
+@include fs-fw(p, $fs-p);
