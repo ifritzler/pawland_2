@@ -36,6 +36,10 @@
     &:focus{
       outline: 1px solid rgba(24, 24, 24, .7);
     }
+    @include media($media-small){
+        width: 100%;
+        padding: 1.1rem 1.2rem;
+    }
   }
 
   @include media($media-medium){
@@ -46,9 +50,12 @@
       font-size: 1.2rem;
     }
   }
-  @include media($media-xs){
+  @include media($media-small){
     & label {
       font-size: 1.3rem;
+    }
+    & > .btn--dark {
+      width: 100%;
     }
   }
 }
