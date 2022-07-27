@@ -3,23 +3,33 @@
   padding: 4rem;
   overflow-x: hidden;
   @include flex-container($just: space-between);
-  @include media($media-medium){
+  @include media($media-medium) {
     padding: 3rem;
     flex-direction: column;
     align-items: flex-start;
     gap: 4rem;
   }
-  @include media($media-xs){
+  @include media($media-xs) {
     padding: 1.3rem;
   }
 }
 
 .footer__links {
-  @include flex-container($dir: column, $wrap: no-wrap, $spacing: 1.5rem, $align:flex-start);
+  @include flex-container(
+    $dir: column,
+    $wrap: no-wrap,
+    $spacing: 1.5rem,
+    $align: flex-start
+  );
 }
 
 #formularioRegistro {
-  @include flex-container($dir: column, $wrap: no-wrap, $spacing: 1.5rem, $align:flex-start);
+  @include flex-container(
+    $dir: column,
+    $wrap: no-wrap,
+    $spacing: 1.5rem,
+    $align: flex-start
+  );
   & label {
     font-size: $fs-p;
     font-weight: 700;
@@ -29,20 +39,20 @@
 
   & input {
     width: 90%;
-    padding: .7rem 1.2rem;
+    padding: 0.7rem 1.2rem;
     font-size: 1.6rem;
     border: none;
-    color: rgba(24, 24, 24, .9);
-    &:focus{
-      outline: 1px solid rgba(24, 24, 24, .7);
+    color: rgba(24, 24, 24, 0.9);
+    &:focus {
+      outline: 1px solid rgba(24, 24, 24, 0.7);
     }
-    @include media($media-small){
-        width: 100%;
-        padding: 1.1rem 1.2rem;
+    @include media($media-small) {
+      width: 100%;
+      padding: 1.1rem 1.2rem;
     }
   }
 
-  @include media($media-medium){
+  @include media($media-medium) {
     & label {
       font-size: 1.5rem;
     }
@@ -50,7 +60,7 @@
       font-size: 1.2rem;
     }
   }
-  @include media($media-small){
+  @include media($media-small) {
     & label {
       font-size: 1.3rem;
     }

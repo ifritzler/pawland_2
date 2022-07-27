@@ -31,7 +31,7 @@
   z-index: 2;
 }
 
-@mixin positionig($type, $top: none, $left: none, $bottom: none, $right: none){
+@mixin positionig($type, $top: none, $left: none, $bottom: none, $right: none) {
   position: $type;
   top: $top;
   left: $left;
@@ -39,8 +39,8 @@
   right: $right;
 }
 
-@mixin media($max-w){
+@mixin media($max-w) {
   @media only screen and (max-width: $max-w) {
-    @content
+    @content;
   }
 }

@@ -115,11 +115,17 @@ html {
   font-size: 62.5%;
 }
 
-body, h1, h2, h3 {
+body,
+h1,
+h2,
+h3 {
   font-family: "Roboto", sans-serif;
 }
 
-p, a, li, span {
+p,
+a,
+li,
+span {
   font-family: "Raleway", "Roboto", sans-serif;
 }
 

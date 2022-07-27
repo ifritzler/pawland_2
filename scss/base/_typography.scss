@@ -1,16 +1,20 @@
 html {
-    font-size: $fs-html-base;
+  font-size: $fs-html-base;
 }
 
-body, h1, h2, h3 {
-    font-family: $font-family-titles;
+body,
+h1,
+h2,
+h3 {
+  font-family: $font-family-titles;
 }
 
-p,a,li,span{
-    font-family: $font-family-paragraph;
+p,
+a,
+li,
+span {
+  font-family: $font-family-paragraph;
 }
-
-
 
 @include fs-fw(h1, $fs-h1, $fw-bold);
 @include fs-fw(h2, $fs-h2, $fw-bold);

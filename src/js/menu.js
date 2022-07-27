@@ -9,15 +9,16 @@ function closeMenu (event) {
   menu.classList.toggle('animate')
   wrapperMenu.classList.toggle('hidden')
 }
-
-menu.addEventListener('click', event => {
-  event.stopPropagation()
-})
-
 wrapperMenu.addEventListener('click', closeMenu)
 closeMenuButton.addEventListener('click', closeMenu)
 
-menuButton.addEventListener('click', event => {
+menu.addEventListener('click', (event) => {
+  // Evita que al tocar en el menu donde no hay botones se salga del menu. Ya que
+  // wrapperMenu al hacerle click cierra el menu como cuando se presiona el btn de cerrar.
+  event.stopPropagation()
+})
+
+menuButton.addEventListener('click', (event) => {
   wrapperMenu.classList.toggle('hidden')
   menu.classList.toggle('animate')
 })

@@ -1,73 +1,72 @@
 // Navbar branding
 .navbar {
-    @include flex-container($just: space-between);
-    width: 100%;
-    background-color: $color-dark;
-    color: white;
-    // padding-inline: 4rem;
-    // padding-block: 1.6rem;
+  @include flex-container($just: space-between);
+  width: 100%;
+  background-color: $color-dark;
+  color: white;
+  // padding-inline: 4rem;
+  // padding-block: 1.6rem;
 }
 
 .navbar__brand {
-    @include flex-container($spacing: 1rem);
-    margin: 1rem;
+  @include flex-container($spacing: 1rem);
+  margin: 1rem;
 }
 
 .navbar__brand-name {
-    font-size: 2.5rem;
+  font-size: 2.5rem;
 }
 
 .navbar__icon,
 .navbar__cart-img,
 .navbar__menu-img,
 #close-btn {
-    fill: white;
+  fill: white;
 }
 
 .navbar__icon,
 .navbar__cart-img,
 .navbar__menu-img,
 #close-btn {
-    width: 3rem;
+  width: 3rem;
 }
 
 // Navbar Link's style
 .navbar__links {
-    @include flex-container($spacing: 3.2rem);
-    
+  @include flex-container($spacing: 3.2rem);
 }
 
 .navbar__links {
-    @include media($media-large) {
-        & p {
-            font-size: 1.4rem;
-            letter-spacing: .7px;
-        }
-        gap: 2rem;
+  @include media($media-large) {
+    & p {
+      font-size: 1.4rem;
+      letter-spacing: 0.7px;
     }
-    @include media($media-medium){
-        display: none;
-    }
+    gap: 2rem;
+  }
+  @include media($media-medium) {
+    display: none;
+  }
 }
 
 .navbar__icons {
-    @include flex-container($spacing: 1rem);
+  @include flex-container($spacing: 1rem);
 }
 
 .navbar__menu {
-    display: none;
-    @include media($media-medium){
-        display: block;
-    }
+  display: none;
+  @include media($media-medium) {
+    display: block;
+  }
 }
 
 // Navbar cart
 .navbar__cart {
-    @include positionig(relative);
-    display: inline-block;
-    padding: .5em;
+  @include positionig(relative);
+  display: inline-block;
+  padding: 0.5em;
 }
 .navbar__cart-count {
-    @include positionig(absolute, $top: 0px, $right: 0px);
-    @include counter;
+  @include positionig(absolute, $top: 0px, $right: 0px);
+  @include counter;
 }

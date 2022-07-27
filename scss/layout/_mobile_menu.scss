@@ -31,7 +31,7 @@
   background-color: black;
   color: white;
   z-index: 9999;
-  transition: width .3s ease-in-out;
+  transition: width 0.3s ease-in-out;
   @include media($media-small) {
     width: 80%;
   }
@@ -39,7 +39,7 @@
     width: 85%;
   }
   &.animate {
-    animation: show-menu .3s forwards;
+    animation: show-menu 0.3s forwards;
   }
 }
 
@@ -62,4 +62,3 @@
 .mobile-menu__links {
   margin-top: 5rem;
 }
-

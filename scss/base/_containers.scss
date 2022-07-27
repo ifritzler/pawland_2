@@ -2,7 +2,7 @@ body {
   min-height: 100vh;
 }
 
-.container-layout{
+.container-layout {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr auto;
@@ -19,13 +19,13 @@ body {
   @include media($media-large) {
     padding: 0 3rem;
   }
-  @include media($media-medium){
+  @include media($media-medium) {
     padding: 0 2rem;
   }
-  @include media($media-small){
+  @include media($media-small) {
     padding: 0 1.4rem;
   }
-  @include media($media-xs){
-    padding: 0 .5rem;
+  @include media($media-xs) {
+    padding: 0 0.5rem;
   }
 }
