@@ -1,0 +1,37 @@
+.cards {
+  display: flex;
+  gap: 1rem;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 2rem 0;
+  justify-content: center;
+  align-items: flex-end;
+  
+  // grid-template-columns: repeat(auto-fill, minmax(min(100%, 25rem), 1fr));
+  // place-items: center;
+}
+
+.card__img {
+  & img {
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+  }
+}
+
+.card {
+  @include flex-container($dir: column, $spacing: 1rem, $just: space-around);
+  padding: 1.3rem;
+  width: 25rem;
+  height: 100%;
+  border: 1px solid $color-dark;
+  & button {
+    width: 100%;
+  }
+}
+
+.card__price {
+  font-size: $fs-h3;
+  font-weight: $fw-sbold;
+}

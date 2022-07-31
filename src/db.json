@@ -1,0 +1,170 @@
+[
+  {
+      "id": 1,
+      "title": "Comedero doble para gato",
+      "categories": ["gato", "accesorios"],
+      "price": 1599,
+      "img": "../src/assets/comedero_doble_gato.jpg",
+      "description": "Comedor Bebedor de mascota, de Madera Barnizada."
+  },
+  {
+      "id": 2,
+      "title": "Comedero doble",
+      "categories": ["gato", "perro", "accesorios"],
+      "price": 1399,
+      "img": "../src/assets/comedero_doble.jpg",
+      "description": "Comedor Bebedor de mascota, de Madera Barnizada."
+  },
+  {
+      "id": 3,
+      "title": "Comedero Antivuelco",
+      "categories": ["gato", "perro", "accesorios"],
+      "price": 2199,
+      "img": "../src/assets/comedero_antivuelco.jpg",
+      "description": "Comedor Bebedor de mascota antivuelco, de Acero Inoxidable."
+  },
+  {
+      "id": 4,
+      "title": "Alfombra de goma antideslizante",
+      "categories": ["gato", "perro", "accesorios"],
+      "price": 2999,
+      "img": "../src/assets/comedero_antivuelco.jpg",
+      "description": "Alfombra antidezlizante para colocar debajo de los comederos/bebederos de tu pichi."
+  },
+  {
+      "id": 5,
+      "title": "Alimento Sieguer Super Premium Criadores 20kg",
+      "categories": ["perro", "alimento"],
+      "price": 9000,
+      "img": "../src/assets/sieguer_can_sp_20.jpg",
+      "description": "La selección de un alimento adecuado para tu mascota es muy importante para garantizar su crecimiento, desarrollo y salud. Con esta opción de Sieger podrás cubrir las necesidades nutricionales y energéticas de tu perro."
+  },
+  {
+      "id": 6,
+      "title": "Agility Premium Adulto 20 kg",
+      "categories": ["perro", "alimento"],
+      "price": 5730,
+      "img": "../src/assets/agiliti_can_p_20.jpg",
+      "description": "La selección de un alimento adecuado para tu mascota es muy importante para garantizar su crecimiento, desarrollo y salud. Con esta opción de Agility podrás cubrir las necesidades nutricionales y energéticas de tu perro."
+  },
+  {
+      "id": 7,
+      "title": "Agility Premium Adulto 10 kg",
+      "categories": ["gato", "alimento"],
+      "price": 6078,
+      "img": "../src/assets/agiliti_cat_p_10.jpg",
+      "description": "La selección de un alimento adecuado para tu mascota es muy importante para garantizar su crecimiento, desarrollo y salud. Con esta opción de Agility podrás cubrir las necesidades nutricionales y energéticas de tu gato."
+  },
+  {
+      "id": 8,
+      "title": "Alimento Excellent Urinary 10kg",
+      "categories": ["gato", "alimento"],
+      "price": 6699,
+      "img": "../src/assets/agiliti_excelent_urinary_10.jpg",
+      "description": "La selección de un alimento adecuado para tu mascota es muy importante para garantizar su crecimiento, desarrollo y salud. Con esta opción de Excellent podrás cubrir las necesidades nutricionales y energéticas de tu gato."
+  },
+  {
+      "id": 9,
+      "title": "Placeholder Item",
+      "categories": [],
+      "price": 999,
+      "img": "../src/assets/default-product-image.png",
+      "description": "This is a default product. Will be more soon"
+  },
+  {
+      "id": 10,
+      "title": "Placeholder Item",
+      "categories": [],
+      "price": 999,
+      "img": "../src/assets/default-product-image.png",
+      "description": "This is a default product. Will be more soon"
+  },
+  {
+      "id": 11,
+      "title": "Placeholder Item",
+      "categories": [],
+      "price": 999,
+      "img": "../src/assets/default-product-image.png",
+      "description": "This is a default product. Will be more soon"
+  },
+  {
+      "id": 12,
+      "title": "Placeholder Item",
+      "categories": [],
+      "price": 999,
+      "img": "../src/assets/default-product-image.png",
+      "description": "This is a default product. Will be more soon"
+  },
+  {
+      "id": 13,
+      "title": "Placeholder Item",
+      "categories": [],
+      "price": 999,
+      "img": "../src/assets/default-product-image.png",
+      "description": "This is a default product. Will be more soon"
+  },
+  {
+      "id": 14,
+      "title": "Placeholder Item",
+      "categories": [],
+      "price": 999,
+      "img": "../src/assets/default-product-image.png",
+      "description": "This is a default product. Will be more soon"
+  },
+  {
+      "id": 15,
+      "title": "Placeholder Item",
+      "categories": [],
+      "price": 999,
+      "img": "../src/assets/default-product-image.png",
+      "description": "This is a default product. Will be more soon"
+  },
+  {
+      "id": 16,
+      "title": "Placeholder Item",
+      "categories": [],
+      "price": 999,
+      "img": "../src/assets/default-product-image.png",
+      "description": "This is a default product. Will be more soon"
+  },
+  {
+      "id": 17,
+      "title": "Placeholder Item",
+      "categories": [],
+      "price": 999,
+      "img": "../src/assets/default-product-image.png",
+      "description": "This is a default product. Will be more soon"
+  },
+  {
+      "id": 18,
+      "title": "Placeholder Item",
+      "categories": [],
+      "price": 999,
+      "img": "../src/assets/default-product-image.png",
+      "description": "This is a default product. Will be more soon"
+  },
+  {
+      "id": 19,
+      "title": "Placeholder Item",
+      "categories": [],
+      "price": 999,
+      "img": "../src/assets/default-product-image.png",
+      "description": "This is a default product. Will be more soon"
+  },
+  {
+      "id": 20,
+      "title": "Placeholder Item",
+      "categories": [],
+      "price": 999,
+      "img": "../src/assets/default-product-image.png",
+      "description": "This is a default product. Will be more soon"
+  },
+  {
+      "id": 21,
+      "title": "Placeholder Item",
+      "categories": [],
+      "price": 999,
+      "img": "../src/assets/default-product-image.png",
+      "description": "This is a default product. Will be more soon"
+  }
+]
