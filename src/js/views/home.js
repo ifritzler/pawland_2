@@ -18,7 +18,7 @@ const html = `
     />
   </div>
 `
-
+// Vista de la home page
 const home = () => {
   const hero = document.createElement('div')
   hero.classList.add('hero')

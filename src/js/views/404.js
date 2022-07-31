@@ -3,6 +3,7 @@ const html = `
   <h1>404. La ruta que acaba de visitar no existe.</h1>
 </div>
 `
+// Vista 404 ante una ruta desconocida
 const notFound = () => {
   const fragment = document.createDocumentFragment()
   const div = document.createElement('div')
