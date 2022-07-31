@@ -1,7 +1,8 @@
 // Servicio que ejecuta el fetching de todos los productos
 const getAllProducts = async() => {
   try {
-    const response = await fetch('/src/db.json')
+    console.log(window.location.pathname + 'src/db.json')
+    const response = await fetch(`${window.location.pathname}src/db.json`)
     const data = await response.json()
     return data
   } catch (error) {
