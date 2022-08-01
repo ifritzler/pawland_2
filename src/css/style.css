@@ -616,4 +616,52 @@ body {
   font-weight: 600;
 }
 
+.carrito {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  padding: 2rem;
+  font-size: 1.6rem;
+}
+
+.carrito-headings,
+.carrito-row-data {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.carrito-headings {
+  background-color: rgb(255, 208, 0);
+  color: rgb(24, 24, 24);
+  font-weight: 600;
+}
+
+.carrito-row-data,
+.carrito-headings {
+  padding: 0.6rem;
+  place-content: center;
+  place-items: self-start;
+}
+
+.carrito-headings {
+  padding: 1rem;
+}
+
+.carrito-row-data {
+  font-size: 0.9em;
+  align-items: center;
+}
+
+.product-img {
+  width: 50px;
+}
+.product-img img {
+  width: 100%;
+  object-fit: scale-down;
+}
+
+.product-data,
+.carrito-heading {
+  padding: 1rem;
+}
+
 /*# sourceMappingURL=style.css.map */

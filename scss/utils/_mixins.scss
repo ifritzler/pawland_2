@@ -44,3 +44,9 @@
     @content;
   }
 }
+
+@mixin minmedia($max-w) {
+  @media only screen and (min-width: $max-w) {
+    @content;
+  }
+}

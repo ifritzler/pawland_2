@@ -3,6 +3,7 @@ import Home from "./views/home.js";
 import notFound from "./views/404.js";
 import cards from "./views/store.js";
 
+// Importamos el carrito inicializado
 // Funcion que facilita y evita repeticion de querySelectors y funciones getElement
 const $ = (selector) => {
   const el = document.querySelectorAll(selector);

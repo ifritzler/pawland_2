@@ -1,3 +1,5 @@
+import { pushToCart } from "../services/addItem.js"
+
 const card = (product) => {
   const html = `
   <li class="card">
@@ -9,10 +11,9 @@ const card = (product) => {
       ${String(product.description).slice(0, 43)}
     </p>
     <span class="card__price">$${product.price}</span>
-    <button class="btn--dark" data-id="${product.id}">Agregar</button>
+    <button class="btn--dark btn-agregar" data-id="${product.id}">Agregar</button>
   </li>
   `
-
   return html
 }
 
