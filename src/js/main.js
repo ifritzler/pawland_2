@@ -2,6 +2,7 @@
 import Home from "./views/home.js";
 import notFound from "./views/404.js";
 import cards from "./views/store.js";
+import cartView from "./views/cart.js";
 
 // Importamos el carrito inicializado
 // Funcion que facilita y evita repeticion de querySelectors y funciones getElement
@@ -20,6 +21,7 @@ const app = $("#app");
 const routes = {
   home: Home,
   tienda: cards,
+  carrito: cartView
 };
 
 // Funcion que recibe una vista y hace un update del contenido en el contenedor principal

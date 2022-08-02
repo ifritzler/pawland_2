@@ -1,20 +1,21 @@
-import { pushToCart } from "../services/addItem.js"
+import { reduceTextDescription } from "../utils.js";
 
 const card = (product) => {
-  const html = `
-  <li class="card">
-  <div class="card__img">
-    <img src="${product.img}" alt="Default product Image">
-    </div>
-    <h3 class="card__title">${String(product.title).slice(0, 20)}</h3>
-    <p class="card__description">
-      ${String(product.description).slice(0, 43)}
-    </p>
-    <span class="card__price">$${product.price}</span>
-    <button class="btn--dark btn-agregar" data-id="${product.id}">Agregar</button>
-  </li>
-  `
-  return html
-}
+  const { img, title, description, price, id } = product;
 
-export default card
+  return `
+    <li class="card">
+    <div class="card__img">
+      <img src="${img}" alt="Default product Image">
+      </div>
+      <h3 class="card__title">${reduceTextDescription(title, 20)}</h3>
+      <p class="card__description">
+        ${reduceTextDescription(description, 43)}
+      </p>
+      <span class="card__price">$${price}</span>
+      <button class="btn--dark btn-agregar" data-id="${id}">Agregar</button>
+    </li>
+  `;
+};
+
+export default card;

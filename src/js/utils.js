@@ -16,6 +16,11 @@ const showToastNotification = ({ title }, callback = null) => {
   }).showToast();
 };
 
+const reduceTextDescription = (text, characters) => {
+  return text.slice(0, characters)
+}
+
 export {
-  showToastNotification
+  showToastNotification,
+  reduceTextDescription
 }
