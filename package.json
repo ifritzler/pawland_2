@@ -19,5 +19,8 @@
     "eslint-plugin-n": "^15.2.4",
     "eslint-plugin-promise": "^6.0.0",
     "sass": "^1.54.0"
+  },
+  "dependencies": {
+    "toastify-js": "^1.12.0"
   }
 }
