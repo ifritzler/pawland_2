@@ -33,6 +33,9 @@ const renderApp = async (view, options = {}) => {
 };
 
 // Manejador de rutas, obtiene el hash de la pagina y renderiza la ruta correspondiente
+// Seguro hay alguna forma mejor. Y aunque hay soluciones a esto, con vanilla js no encontre solucion alguna por el momento
+// Refactorizar esta porcion de codigo cuando sea necesario.
+// Al dia de hoy es funcional
 const routeHandler = async (e) => {
   e.preventDefault();
   let link = e.target;
@@ -80,3 +83,5 @@ const loadEventListeners = async () => {
   });
 };
 loadEventListeners();
+
+export {routeHandler}

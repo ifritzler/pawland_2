@@ -1,7 +1,7 @@
 import cartRow from "../components/cartRow.js";
 import { getCartCopy } from "../cart.js";
 
-const cartView = () => {
+const cartView = (options) => {
   const carrito = getCartCopy();
   let htmlItems = ""
   Object.entries(carrito).forEach(item => htmlItems += cartRow(item[0], item[1]));
