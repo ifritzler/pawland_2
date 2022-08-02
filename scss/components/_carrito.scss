@@ -9,7 +9,7 @@
 .carrito-headings,
 .carrito-row-data {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: 100px 20ch repeat(4, 1fr);
 }
 
 .carrito-headings {
@@ -22,10 +22,6 @@
   padding: 0.6rem;
   place-content: center;
   place-items: self-start;
-}
-
-.carrito-headings {
-  padding: 1rem;
 }
 
 .carrito-row-data {
@@ -41,7 +37,6 @@
   }
 }
 
-.product-data,
-.carrito-heading {
+.product-data {
   padding: 1rem;
 }

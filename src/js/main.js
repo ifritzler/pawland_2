@@ -4,6 +4,7 @@ import notFound from "./views/404.js";
 import cards from "./views/store.js";
 import cartView from "./views/cart.js";
 
+const links = document.getElementsByClassName("link");
 // Importamos el carrito inicializado
 // Funcion que facilita y evita repeticion de querySelectors y funciones getElement
 const $ = (selector) => {
@@ -21,30 +22,61 @@ const app = $("#app");
 const routes = {
   home: Home,
   tienda: cards,
-  carrito: cartView
+  carrito: cartView,
 };
 
 // Funcion que recibe una vista y hace un update del contenido en el contenedor principal
 // de mi spa
-const renderApp = async (view) => {
+const renderApp = async (view, options = {}) => {
   app.innerHTML = "";
-  app.appendChild(await view());
+  app.appendChild(await view(options));
 };
 
 // Manejador de rutas, obtiene el hash de la pagina y renderiza la ruta correspondiente
 const routeHandler = async (e) => {
   e.preventDefault();
-  const hash = window.location.hash.split("?")[0].split("#/")[1];
-  if (!hash) return renderApp(Home);
+  let link = e.target;
+  const localName = e.target.localName;
+  switch (localName) {
+    case "div":
+      link = e.target.firstChild;
+      break;
+    case "path":
+      link = e.target.parentElement.parentElement;
+      break;
+    case "a":
+      break;
+    default:
+      link = e.target.parentElement;
+  }
 
+  if (!link) {
+    return await renderApp(Home);
+  }
+
+  const url = new URL(link.href);
+  const hash = url.hash.split("/")[1];
+
+  if (!hash) return await renderApp(Home);
   const route = routes[hash];
-  if (!route) return renderApp(notFound);
+  if (!route) return await renderApp(notFound);
 
-  return await renderApp(route);
+  return await renderApp(route, { url });
 };
 
 // Event Listeners
 // Al cargarse por completo el documento ejecuto el manejador de rutas para renderizar el contenido de la homepage
-window.addEventListener("DOMContentLoaded", (e) => routeHandler(e));
-// Al cambiar el hash ejecuto el manejador de rutas para el update de contenido
-window.addEventListener("hashchange", (e) => routeHandler(e));
+const loadEventListeners = async () => {
+  window.addEventListener(
+    "DOMContentLoaded",
+    async (e) => await routeHandler(e)
+  );
+  // Al cambiar el hash ejecuto el manejador de rutas para el update de contenido
+  window.addEventListener("hashchange", async (e) => await routeHandler(e));
+
+  // Este evento captura los link
+  Array.from(links).forEach((l) => {
+    l.addEventListener("click", async (e) => await routeHandler(e));
+  });
+};
+loadEventListeners();

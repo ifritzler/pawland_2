@@ -5,3 +5,9 @@
 body {
   background-color: $color-base;
 }
+
+* {
+  & .unselectable {
+    user-select: none;
+  }
+}

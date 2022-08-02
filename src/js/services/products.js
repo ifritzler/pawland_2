@@ -17,7 +17,20 @@ const getProductById = async (id) => {
   return product[0] || null
 }
 
+const getProductsByCategories = async (categories = null) => {
+  const products = await getAllProducts()
+
+  if(categories && categories.length > 0) {
+    return products.filter(product => {
+      return product.categories.some(c => categories.includes(c))
+    })
+  }
+  
+  return products
+}
+
 export {
   getAllProducts,
-  getProductById
+  getProductById,
+  getProductsByCategories
 }

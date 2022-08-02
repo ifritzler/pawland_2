@@ -10,17 +10,14 @@ const showToastNotification = ({ title }, callback = null) => {
     style: {
       background: "rgba(255, 208, 0, 1)",
       color: "rgba(24, 24, 24, 1)",
-      fontSize: "16px"
+      fontSize: "16px",
     },
     onClick: callback ? callback : null, // Callback after click
   }).showToast();
 };
 
 const reduceTextDescription = (text, characters) => {
-  return text.slice(0, characters)
-}
+  return text.slice(0, characters);
+};
 
-export {
-  showToastNotification,
-  reduceTextDescription
-}
+export { showToastNotification, reduceTextDescription };

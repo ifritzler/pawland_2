@@ -3,8 +3,8 @@
   gap: 1rem;
   flex-direction: row;
   flex-wrap: wrap;
-  padding: 2rem 0;
-  justify-content: center;
+  padding: 2rem;
+  justify-content: space-around;
   align-items: flex-end;
   
   // grid-template-columns: repeat(auto-fill, minmax(min(100%, 25rem), 1fr));

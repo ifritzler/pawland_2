@@ -1,21 +1,18 @@
 import card from "../components/card.js";
 
-import { getAllProducts, getProductById } from "../services/products.js";
-import { pushToCart } from "../services/cart.js";
-import { showToastNotification } from "../utils.js";
-
-const saveProductToCart = async (event) => {
-  event.preventDefault();
-  const { id } = event.target.dataset;
-  const product = await getProductById(id);
-  pushToCart(product);
-  showToastNotification(product, () => console.log("hello from toast"));
-};
+import {
+  getProductsByCategories,
+} from "../services/products.js";
+import { saveProductToCart } from "../cart.js";
 
 // Componente que se encarga de renderizar las cards dentro de si y se devuelve para ser pintado
-const cards = async (filters = null) => {
+const cards = async (options) => {
+
+  const {url} = options;
+  const categories = url.searchParams.getAll("category");
+
   // Separacion de responsabilidad. El fetching lo realiza el servicio de getAllProducts()
-  const data = await getAllProducts();
+  const data = await getProductsByCategories(categories);
   const cardsContainer = document.createElement("ul");
   cardsContainer.classList.add("cards");
 

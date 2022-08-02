@@ -3,8 +3,8 @@ import { getCartCopy } from "../cart.js";
 
 const cartView = () => {
   const carrito = getCartCopy();
-  let htmlItems = "";
-  Object.values(carrito).forEach(item => htmlItems += cartRow(item));
+  let htmlItems = ""
+  Object.entries(carrito).forEach(item => htmlItems += cartRow(item[0], item[1]));
   const cartElement = document.createElement('div')
   cartElement.classList.add('carrito')
 
@@ -15,6 +15,7 @@ const cartView = () => {
         <div class="carrito-heading">Precio Unitario</div>
         <div class="carrito-heading">Cantidad</div>
         <div class="carrito-heading">Total</div>
+        <div class="carrito-heading">Eliminar</div>
       </div>
       <div class="carrito-body">
         ${htmlItems}

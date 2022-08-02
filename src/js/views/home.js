@@ -17,13 +17,13 @@ const html = `
       alt="Perro de pelaje rubio sonriendo"
     />
   </div>
-`
+`;
 // Vista de la home page
 const home = () => {
-  const hero = document.createElement('div')
-  hero.classList.add('hero')
-  hero.innerHTML = html
-  return hero
-}
+  const hero = document.createElement("div");
+  hero.classList.add("hero");
+  hero.innerHTML = html;
+  return hero;
+};
 
-export default home
+export default home;
