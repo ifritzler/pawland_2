@@ -4,7 +4,7 @@ import { getCartCopy } from "../cart.js";
 const cartView = () => {
   const carrito = getCartCopy();
   let htmlItems = "";
-  Object.values(carrito).forEach((item) => (htmlItems += cartRow(item)));
+  Object.values(carrito).forEach(item => htmlItems += cartRow(item));
   const cartElement = document.createElement('div')
   cartElement.classList.add('carrito')
 

@@ -3,12 +3,12 @@ import { getCartCopy, updateCarrito } from "../cart.js";
 const pushToCart = (product) => {
   
   const carrito = getCartCopy()
+  const {id, img, title, price} = product
   if(carrito.hasOwnProperty(product.id)){
-    carrito[product.id].quantity =  Number(carrito[product.id].quantity) + 1
-    carrito[product.id].total = carrito[product.id].quantity * carrito[product.id].price
+    carrito[id].quantity =  Number(carrito[id].quantity) + 1
+    carrito[id].total = carrito[id].quantity * carrito[id].price
   }else {
-    const {img, title, price} = product
-    carrito[product.id] = {
+    carrito[id] = {
       img, title, price,
       quantity: 1,
       total: price
