@@ -1,7 +1,7 @@
 import card from "../components/card.js";
 
 import { getAllProducts, getProductById } from "../services/products.js";
-import { pushToCart } from "../services/addItem.js";
+import { pushToCart } from "../services/cart.js";
 import { showToastNotification } from "../utils.js";
 
 const saveProductToCart = async (event) => {
